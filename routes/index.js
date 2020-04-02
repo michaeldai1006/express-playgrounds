@@ -8,7 +8,8 @@ router.use('/', function(req, res, next) {
   console.log('--------------------------------------------------');
   console.log('Headers:', req.headers);
   console.log('--------------------------------------------------');
-  console.log('Body:', req.body);
+  console.log('Body-JSON:', JSON.stringify(req.body));
+  console.log('Body-String:', req.body);
   console.log('==================================================');
 
   // Response
