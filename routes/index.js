@@ -4,7 +4,11 @@ var router = express.Router();
 router.use('/', function(req, res, next) {
   // Log req content
   console.log('==================================================');
+  console.log('URL:', req.url);
+  console.log('--------------------------------------------------');
   console.log('Method:', req.method);
+  console.log('--------------------------------------------------');
+  console.log('Query:', req.query);
   console.log('--------------------------------------------------');
   console.log('Headers:', req.headers);
   console.log('--------------------------------------------------');
